@@ -32,7 +32,7 @@ class TwoColImgTxt extends WP_Widget {
 			<div class="row">
 				<div class="columns large-6">
 						<?php if ( ! empty( $instance['upload_image'] ) ) { ?>		
-							<img src="<?php echo $instance['upload_image'] ?>" alt="" style="max-width:600px; width:100%; ">
+							<img src="<?php echo $instance['upload_image'] ?>" alt="" >
 							<?php
 						} ?>	
 				</div>
@@ -82,9 +82,9 @@ class TwoColImgTxt extends WP_Widget {
 			
 			<label for="<?php echo $this->get_field_id( 'upload_image' ); ?>"><?php _e( 'Image:' ); ?></label>
 
-			<span style="background-color:#999; padding:10px; display:block; float:left;"><img src="<?php echo esc_attr( $upload_image ); ?>" alt="" style="max-width:300px; width:100%; float:left;"></span>
+			<span class="spanClass" style="background-color:#999; padding:10px; display:block; float:left;"><img src="<?php echo esc_attr( $upload_image ); ?>" alt="" style="max-width:300px; width:100%; float:left;"></span>
 			
-			<input id="<?php echo $this->get_field_id( 'upload_image' ); ?>" type="text" size="36" name="<?php echo $this->get_field_name( 'upload_image' ); ?>" value="<?php echo esc_attr( $upload_image ); ?>" />
+			<input class="upload-img" id="<?php echo $this->get_field_id( 'upload_image' ); ?>" type="text" size="36" name="<?php echo $this->get_field_name( 'upload_image' ); ?>" value="<?php echo esc_attr( $upload_image ); ?>" />
 			<!-- <input id="upload_image_button" type="button" value="Upload Image" /> -->
 		</p>
 		<p>
@@ -108,7 +108,7 @@ class TwoColImgTxt extends WP_Widget {
 		$instance = array();
 		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
 		$instance['upload_image'] = ( ! empty( $new_instance['upload_image'] ) ) ? $new_instance['upload_image'] : '';
-		$instance['description'] = ( ! empty( $new_instance['description'] ) ) ? strip_tags( $new_instance['description'] ) : '';
+		$instance['description'] = ( ! empty( $new_instance['description'] ) ) ? $new_instance['description'] : '';
 
 		return $instance;
 	}
@@ -120,21 +120,8 @@ class TwoColImgTxt extends WP_Widget {
 // register TwoColImgTxt widget
 function register_TwoColImgTxt() {
     register_widget( 'TwoColImgTxt' );
-    add_action('admin_enqueue_scripts', 'TwoColImgTxt_admin_scripts');
 }
 add_action( 'widgets_init', 'register_TwoColImgTxt' );
 
-
-function TwoColImgTxt_admin_scripts() {
-	wp_enqueue_media();
-	wp_register_script('TwoColImgTxt-upload', get_template_directory_uri() . '/assets/functions/widgets/js/twoColImgTxt-widget.js', array('jquery'));
-	wp_enqueue_script('TwoColImgTxt-upload');
-}
-
-
-
-// if (isset($_GET['page']) && $_GET['page'] == 'widget.php') {
-	
-// }
 
 ?>

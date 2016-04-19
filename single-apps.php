@@ -17,20 +17,21 @@ single-bookmarks.php
 			
 <div id="content">
 
-	<div id="inner-content" class="row">
+	<div id="inner-content-side">
 
-		<main id="main" class="large-8 medium-8 columns first" role="main">
-		
-		    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		
-		    	<?php get_template_part( 'parts/loop', 'single-apps' ); ?>
-		    					
-		    <?php endwhile; else : ?>
-		
-		   		<?php get_template_part( 'parts/content', 'missing' ); ?>
+		<main id="main" class="" role="main">
+			<section>
+						
+			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+			
+			    	<?php get_template_part( 'parts/loop', 'single-apps' ); ?>
+			    					
+			    <?php endwhile; else : ?>
+			
+			   		<?php get_template_part( 'parts/content', 'missing' ); ?>
 
-		    <?php endif; ?>
-
+			    <?php endif; ?>
+			</section>
 		</main> <!-- end #main -->
 
 		<?php if ( is_active_sidebar( 'apps_page_sidebar' ) ) : ?>
@@ -38,6 +39,16 @@ single-bookmarks.php
 				<?php dynamic_sidebar( 'apps_page_sidebar' ); ?>
 			</div><!-- #middle-bar-right-sidebar -->
 		<?php endif; ?>
+		
+		<section class="secondary-sidebar">
+			<?php if ( is_active_sidebar( 'apps_single_page_sidebar' ) ) : ?>
+				<div id="apps-single-page-sidebar" class="apps-single-page-sidebar">
+					<?php dynamic_sidebar( 'apps_single_page_sidebar' ); ?>
+				</div><!-- #middle-bar-right-sidebar -->
+			<?php endif; ?>
+		</section>
+
+		
 
 	</div> <!-- end #inner-content -->
 
