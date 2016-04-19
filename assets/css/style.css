@@ -4679,10 +4679,15 @@ HOMEPAGE STYLES
     padding-left: 100px;
     padding-right: 100px;
     margin: 0 auto;
+<<<<<<< HEAD
     padding: 60px 0; }
     @media screen and (min-width: 1024px) {
       .homepage-content .widget_text, .arpage-content .widget_text, .vrpage-content .widget_text, .auraschool-content .widget_text, .solararpage-content .widget_text {
         width: 80%; } }
+=======
+    width: 80%;
+    padding: 60px 0; }
+>>>>>>> origin/master
     .homepage-content .widget_text .textwidget, .arpage-content .widget_text .textwidget, .vrpage-content .widget_text .textwidget, .auraschool-content .widget_text .textwidget, .solararpage-content .widget_text .textwidget {
       width: 90%;
       margin: 0 auto; }
@@ -4698,10 +4703,13 @@ HOMEPAGE STYLES
   width: 80%; }
   .image-text-widget h2 {
     margin-bottom: 20px; }
+<<<<<<< HEAD
     @media screen and (max-width: 640px) {
       .image-text-widget h2 {
         font-size: 24px;
         font-weight: 400; } }
+=======
+>>>>>>> origin/master
   .image-text-widget p {
     font-size: 16px;
     color: #666; }
@@ -4712,6 +4720,7 @@ HOMEPAGE STYLES
 @media screen and (min-width: 40em) {
   h2 {
     font-size: 2.8rem; } }
+<<<<<<< HEAD
 
 .widget_threecolimgtxt .main-header {
   text-align: center; }
@@ -4722,6 +4731,18 @@ HOMEPAGE STYLES
 .widget_threecolimgtxt .columns {
   padding: 0; }
 
+=======
+
+.widget_threecolimgtxt .main-header {
+  text-align: center; }
+  .widget_threecolimgtxt .main-header h2 + p {
+    color: #888;
+    margin-bottom: 60px; }
+
+.widget_threecolimgtxt .columns {
+  padding: 0; }
+
+>>>>>>> origin/master
 .widget_threecolimgtxt .section-area {
   max-width: 300px; }
 
@@ -5408,6 +5429,7 @@ div.wpcf7 {
       color: white;
       border-color: #1585cf; }
 
+<<<<<<< HEAD
 .fullscreen-bg {
   position: relative;
   overflow: hidden;
@@ -5481,6 +5503,9 @@ h1.white-text {
     max-width: 150%; }
   .auraschool-content #imagewidget-6 img {
     max-width: 150%; }
+=======
+@media screen and (max-width: 63.9375em) {
+>>>>>>> origin/master
   .widget_text {
     width: 100%;
     padding: 20px 15px; }
@@ -5496,15 +5521,26 @@ h1.white-text {
         padding-bottom: 15px; }
   .aboutpage-content .widget_text {
     padding: 0; }
+<<<<<<< HEAD
     .aboutpage-content .widget_text h2 {
       font-size: 3em;
       padding: 20px 40px; }
+=======
+  .aboutpage-content h2 {
+    font-size: 3em;
+    padding: 20px 40px; }
+>>>>>>> origin/master
   .slick-slider {
     margin-bottom: 0; }
   .image-text-widget {
     width: 90%; }
     .image-text-widget img {
       width: 100%; }
+<<<<<<< HEAD
+=======
+    .image-text-widget h2 {
+      display: none; }
+>>>>>>> origin/master
     .image-text-widget .large-6:first-child {
       text-align: center;
       margin-bottom: 20px; }
@@ -5560,12 +5596,16 @@ h1.white-text {
         overflow: hidden;
         font-size: 20px;
         font-weight: 500;
+<<<<<<< HEAD
         margin-bottom: 6px; } }
       @media screen and (max-width: 63.9375em) and (max-width: 640px) {
         .widget_threecolimgtxt .image-text-widget .section-area h2 {
           font-weight: 400; } }
 
 @media screen and (max-width: 63.9375em) {
+=======
+        margin-bottom: 6px; }
+>>>>>>> origin/master
         .widget_threecolimgtxt .image-text-widget .section-area h2 + p {
           overflow: hidden;
           padding: 0;
@@ -5611,18 +5651,26 @@ h1.white-text {
     #text-4.arpage_content h2,
     #text-7.vrpage_content h2,
     #text-10.auraschool_content h2 {
+<<<<<<< HEAD
       font-size: 32px; }
   .contactpage-content .widget_text {
     padding: 0; } }
 
 @media screen and (max-width: 39.9375em) {
   .aboutpage-content .widget_text h2 {
+=======
+      font-size: 32px; } }
+
+@media screen and (max-width: 39.9375em) {
+  .aboutpage-content h2 {
+>>>>>>> origin/master
     font-size: 2em;
     padding: 10px 20px; } }
 
 .hide-for-large #top-bar-menu a {
   color: white; }
 
+<<<<<<< HEAD
 .hide-for-large .top-bar li a {
   font-size: 20px; }
 
@@ -5637,6 +5685,8 @@ h1.white-text {
 div.wpcf7 {
   padding: 0 20px; }
 
+=======
+>>>>>>> origin/master
 /******************************************************************
 
 Stylesheet: Retina Screens & Devices Stylesheet

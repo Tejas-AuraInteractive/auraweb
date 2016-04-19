@@ -14,7 +14,11 @@ Template Name: Front Page (No Sidebar)
 
 		    	<?php if ( is_active_sidebar( 'homepage_content' ) ) : ?>
 					<div id="homepage-content" class="homepage-content">
+<<<<<<< HEAD
 						<div class="fullscreen-bg">
+=======
+						<div class="fullscreen-bg hide-for-small">
+>>>>>>> origin/master
 							<div class="overlay-text text-center">
 								<h1 class="light white-text text-center">We Build Reality</h1>
 								<div class="row">
@@ -23,13 +27,59 @@ Template Name: Front Page (No Sidebar)
 									</div>
 									<a href="http://aura-interactive.com/solarar/" class="button large-btn">Explore our App</a>
 								</div>
+<<<<<<< HEAD
 							</div>
 							<div class="show-for-small-only small-down-bg-image"></div>
 						    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg_video hide-for-small-only">
+=======
+							</div>	
+						    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg_video">
+>>>>>>> origin/master
 						        <source src="http://aura-interactive.com/wp-content/themes/auraweb/assets/aura-homescreen-video.webm" type="video/webm">
 						        <source src="http://aura-interactive.com/wp-content/themes/auraweb/assets/aura-homescreen-video.mp4" type="video/mp4">
 						    </video>
 						</div>
+<<<<<<< HEAD
+=======
+						<style>
+						.fullscreen-bg {
+						    position: relative;
+						    overflow: hidden;
+						    height: 554px;
+						    width: 100%;
+						}
+						h1.white-text {
+							font-size: 5em;
+						}
+						.large-btn {
+							font-size: 1.3em;
+							margin-top: 20px;
+						}
+						.lead {
+							font-size: 2em;
+	    					line-height: 1.6;
+							margin-top: 10px;
+						}
+						.white-text {
+						    color: #FFF;
+						}
+						.fullscreen-bg_video {
+							position: absolute;
+						    width: 100%;
+						    height: auto;
+						    bottom: 0;
+						}
+						.overlay-text {
+							position: absolute;
+						    z-index: 1;
+						    width: 100%;
+						    height: 100%;
+						    top: 0;
+						    bottom: 0;
+						    margin-top: 150px;
+						}
+						</style>
+>>>>>>> origin/master
 						<?php dynamic_sidebar( 'homepage_content' ); ?>
 					</div><!-- #middle-bar-right-sidebar -->
 				<?php endif; ?>

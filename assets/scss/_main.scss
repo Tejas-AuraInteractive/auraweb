@@ -943,10 +943,15 @@ HOMEPAGE STYLES
 	.widget_text {
 		@include center-text-widget;
 		margin: 0 auto;
+<<<<<<< HEAD
 		padding: 60px 0;
 		@media screen and (min-width: 1024px) {
 			width: 80%;
 		}
+=======
+		width: 80%;
+		padding: 60px 0;
+>>>>>>> origin/master
 		.textwidget {
 			width: 90%;
 			margin: 0 auto;
@@ -960,10 +965,13 @@ HOMEPAGE STYLES
 	width: 80%;
 	h2 {
 		margin-bottom: 20px;
+<<<<<<< HEAD
 		@media screen and (max-width: 640px) {
 			font-size: 24px;
 			font-weight: 400;
 		}
+=======
+>>>>>>> origin/master
 	}
 	p {
 		font-size: 16px;
@@ -974,6 +982,7 @@ HOMEPAGE STYLES
 		margin: auto;
 	}
 }
+<<<<<<< HEAD
 
 @media screen and (min-width: 40em) {
 	h2 {
@@ -981,6 +990,15 @@ HOMEPAGE STYLES
 	}	
 }
 
+=======
+
+@media screen and (min-width: 40em) {
+	h2 {
+	    font-size: 2.8rem;
+	}	
+}
+
+>>>>>>> origin/master
 .widget_threecolimgtxt {
 	.main-header {
 		text-align: center;
@@ -1871,6 +1889,7 @@ div.wpcf7 {
     	}
     }
 }
+<<<<<<< HEAD
 .fullscreen-bg {
     position: relative;
     overflow: hidden;
@@ -1964,6 +1983,9 @@ h1.white-text {
 			max-width: 150%;
 		}
 	}
+=======
+@include breakpoint(medium down) {
+>>>>>>> origin/master
 	.widget_text {
 		width: 100%;
 		padding: 20px 15px;
@@ -1984,12 +2006,20 @@ h1.white-text {
 	.aboutpage-content {
 		.widget_text {
 			padding: 0;
+<<<<<<< HEAD
 			h2 {
 				font-size: 3em;
 	    		padding: 20px 40px;
 			}
 		}
 		
+=======
+		}
+		h2 {
+			font-size: 3em;
+    		padding: 20px 40px;
+		}
+>>>>>>> origin/master
 	}
 	.slick-slider {
 		margin-bottom: 0;
@@ -2000,7 +2030,11 @@ h1.white-text {
 			width: 100%;
 		}
 		h2 {
+<<<<<<< HEAD
 			// display: none;
+=======
+			display: none;
+>>>>>>> origin/master
 		}
 		.large-6:first-child {
 			text-align: center;
@@ -2074,9 +2108,12 @@ h1.white-text {
 					overflow: hidden;
 					font-size: 20px;
 					font-weight: 500;
+<<<<<<< HEAD
 					@media screen and (max-width: 640px) {
 						font-weight: 400;
 					}
+=======
+>>>>>>> origin/master
 					margin-bottom: 6px;
 					+ p {
 						overflow: hidden;
@@ -2143,17 +2180,24 @@ h1.white-text {
 			font-size: 32px;  
 		}
 	}
+<<<<<<< HEAD
 	.contactpage-content {
 		.widget_text {
 			padding: 0;
 		}
 	}
+=======
+>>>>>>> origin/master
 
 }
 	
 @media #{$small-only} {
 	.aboutpage-content {
+<<<<<<< HEAD
 		.widget_text h2 {
+=======
+		h2 {
+>>>>>>> origin/master
 			font-size: 2em;
     		padding: 10px 20px;
 		}
@@ -2164,6 +2208,7 @@ h1.white-text {
 	a {
 		color: white;
 	}
+<<<<<<< HEAD
 }
 
 .hide-for-large .top-bar li a {
@@ -2184,4 +2229,6 @@ h1.white-text {
 }
 div.wpcf7 {
 	padding: 0 20px;
+=======
+>>>>>>> origin/master
 }

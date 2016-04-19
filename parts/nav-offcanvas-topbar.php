@@ -24,7 +24,11 @@
 
 
 <?php if ( $logo_location == 'aboveMenu' || is_active_sidebar( 'middle_bar_right_section' )) : ?>
+<<<<<<< HEAD
 	<div class="show-for-large contain-to-grid middle-bar">
+=======
+	<div class="show-for-medium contain-to-grid middle-bar">
+>>>>>>> origin/master
 		<nav class="top-bar" data-topbar>
 			<?php if($is_logo_set && ($logo_location == 'aboveMenu')){ ?>
 				<div class="float-left">
@@ -45,7 +49,11 @@
 
 
 <?php if ( $is_menu ) : ?>
+<<<<<<< HEAD
 	<div class="show-for-large  <?php if ($menu_box_shadow != 'none') { echo $menu_box_shadow; } if ($menubar_width == 'fixedWidth') { echo ' row '; } ?> main-menu-bar">
+=======
+	<div class="show-for-medium  <?php if ($menu_box_shadow != 'none') { echo $menu_box_shadow; } if ($menubar_width == 'fixedWidth') { echo ' row '; } ?> main-menu-bar">
+>>>>>>> origin/master
 		<nav class="top-bar" data-topbar>
 			<?php if ( $logo_location == 'besidesMenu') : ?>
 				<div class="float-left">
